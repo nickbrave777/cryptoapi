@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM --platform=linux/amd64 node:16
+FROM node:16
 ENV NODE_ENV=production 
 
 # Create App directory
