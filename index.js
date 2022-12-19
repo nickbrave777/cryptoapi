@@ -69,6 +69,16 @@ const obtenerPrecios = async () => {
 }
 
 
+app.get('/healthcheck', (req,res) => {
+    res.status(200).json({status: 'ok'})
+})
+
+app.get('/author', (req,res) => {
+    res.status(200).json({author: 'nubox'})
+})
+
+
+
 app.get('/', async (req, res) => {
     try {
 
