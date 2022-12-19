@@ -77,6 +77,11 @@ app.get('/author', (req,res) => {
     res.status(200).json({author: 'nubox'})
 })
 
+app.get('/holamundo', (req,res) => {
+    res.status(200).json({msg: 'Hola Mundo'})
+})
+
+
 
 
 app.get('/', async (req, res) => {
